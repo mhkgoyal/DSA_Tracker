@@ -1,0 +1,7 @@
+node *s=head;
+node *f=head;
+while(f->next!=NULL && f->next->next!=NULL)
+{
+s=s->next;
+f=f->next->next;
+}
