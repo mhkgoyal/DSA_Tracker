@@ -1,0 +1,23 @@
+class node
+{public:
+int data;
+node*head;
+node*tail;
+};
+
+node*prev=null;
+node*curr=head;
+
+while(cur!=null)
+{
+node *originalcurrentnxt=cur->next;
+curr->next=prev;
+
+prev=prev->next;
+curr=originalcurrentnxt;
+}
+
+node temp=head;
+head=tail;
+tail=temp;
+
