@@ -1,0 +1,14 @@
+void kthFromEnd(int k)
+{
+Node*slow=head;
+Node*fast=head;
+for(i=1; i<k ; i++)
+{
+fast=fast->next;
+}
+while(fast!=tail)
+{
+slow=slow->next;
+fast=fast->next;}
+return slow;
+}
